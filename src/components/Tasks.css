@@ -1,0 +1,77 @@
+.task {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: min(600px, 100%);
+
+    & li {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: start;
+        width: 100%;
+        margin: 10px;
+        text-align: left;
+        gap: 20px;
+        transition: all 0.2s ease-in-out;
+        overflow: hidden;
+
+        & button {
+            all: unset;
+            background-color: #ccc;
+            padding: 30px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.8rem;
+        }
+
+
+        & button:nth-child(2),
+        & button:nth-child(3) {
+            padding: 24px;
+            transition: all 0.4s ease-in-out;
+            scale: 0;
+            border-radius: 50%;
+            background-color: #fff;
+            color: #000;
+            position: absolute;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+        }
+        & button:nth-child(2) {
+            right: calc(50% - 180px);
+        }
+        & button:nth-child(3) {
+            right: calc(50% - 250px);
+        }
+
+        & button:hover {
+            scale: 1 !important;
+        }
+
+
+        & .completed {
+            text-decoration: line-through;
+            border-left: greenyellow 10px solid;
+            background-color: #acff2f69;
+            color: transparent;
+            transition: all 0.2s ease-in-out;
+
+        }
+        & .completed::before {
+            content: "Tarefa completa!";
+            color: rgb(0, 0, 0);
+            position: absolute;
+        }
+    }
+    & li:hover button:not(:nth-child(1)) {
+        scale: 75%;
+        
+    }
+    
+    
+}

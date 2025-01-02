@@ -1,0 +1,31 @@
+.add-task {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+    width: min(600px, 100%);
+    gap: 10px;
+
+    & input {
+        width: 93%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+    }
+
+    & button {
+        all: unset;
+        background-color: #0000006e;
+        padding: 10px 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        cursor: pointer;
+        width: 90%;
+    }
+}
