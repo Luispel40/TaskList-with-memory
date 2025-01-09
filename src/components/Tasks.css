@@ -7,7 +7,7 @@
     align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: min(600px, 80%);
+    width: min(600px, 95%);
 
     & li {
         display: grid;
@@ -43,10 +43,10 @@
             box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
         }
         & button:nth-child(2) {
-            right: calc(50% - 180px);
+            right: calc(50% - 100px);
         }
         & button:nth-child(3) {
-            right: calc(50% - 250px);
+            right: calc(50% - 160px);
         }
 
         & button:hover {
