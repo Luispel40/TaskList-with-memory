@@ -39,3 +39,10 @@
 .task__page h1 {
   margin-bottom: 20px;
 }
+
+@media (max-width: 600px) {
+    .task__page__header {
+        height: 90%;
+    }
+  
+}

@@ -7,7 +7,7 @@
     align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: min(600px, 100%);
+    width: min(600px, 80%);
 
     & li {
         display: grid;
